@@ -1,0 +1,17 @@
+{
+  "name": "online_course_app",
+  "version": "1.0.0",
+  "description": "online course app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:fe": "npm run --prefix ./frontend start",
+    "start:be": "npm run --prefix ./backend start",
+    "start": "concurrently \"npm run start:fe\" \"npm run start:be\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
